@@ -1,0 +1,164 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    background: linear-gradient(to right, #f2f2f2, #d9d9d9);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Dashboard container */
+.dashboard {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* Dashboard header */
+.dashboard header {
+    background: linear-gradient(to right, #4c5257, #33383d);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 1250px;
+}
+
+.dashboard header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.dashboard header a {
+    text-decoration: none;
+}
+
+.dashboard header button {
+    background-color: #1ab035;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard header button:hover {
+    background-color: #0fa140;
+}
+
+/* Dashboard content */
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+}
+
+.dashboard-content > div {
+    flex: 1 1 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard-content > div:last-child {
+    margin-right: 0;
+}
+
+.dashboard-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dashboard-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-content th,
+.dashboard-content td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.dashboard-content th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dashboard-content .button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-content .button-column button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-content .button-column button:last-child {
+    margin-bottom: 0;
+}
+
+/* Beautiful colors */
+.dashboard header {
+    background: linear-gradient(to right, #fa709a, #fee140);
+}
+
+.dashboard-content th {
+    background-color: #e6e6e6;
+}
+
+.dashboard-content .button-column button {
+    background-color: #ff6f69;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-content .button-column button:hover {
+    background-color: #ff3e3b;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-content .button-column button {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-content .button-column button:hover {
+    animation: none; /* Disable the scale animation on hover */
+}

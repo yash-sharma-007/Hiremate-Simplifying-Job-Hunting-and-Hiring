@@ -1,0 +1,183 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #4c5257, #33383d);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+}
+
+/* Profile button styles */
+.profile-button {
+    background: linear-gradient(to bottom, #4CAF50, #388E3C);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background: linear-gradient(to bottom, #3e8e41, #2E7D32);
+}
+
+.logout-button {
+    background: linear-gradient(to bottom, #4CAF50, #388E3C);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background: linear-gradient(to bottom, #3e8e41, #2E7D32);
+}
+
+/* Container styles */
+.container {
+    margin: 20px;
+}
+
+/* Available Jobs styles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    color: #555;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Animation styles */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to the header */
+header {
+    animation: fade-in 0.8s ease;
+}
+
+/* Apply slide-in animation to the container
+#jobcontainer li {
+  animation: slide-in 0.8s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-button {
+        margin-top: 10px;
+    }
+
+    .logout-button {
+        margin-top: 10px;
+    }
+}
+
+/* Add your other styles and customizations below */
+
+/* Example additional styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul li {
+    background-color: #f9f9f9;
+}
+
+button {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
